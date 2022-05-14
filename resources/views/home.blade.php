@@ -9,7 +9,6 @@
 
 
     <title>Wenasa Hotel</title>
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
     <link href="{{ asset('assets_back_end/css/notiflix.css') }}" rel="stylesheet" />
 
@@ -32,12 +31,12 @@
                 <a class="navbar-text" href="/OFFERS">
                     <button id="offers_btn" type="button" class="btn btn-secondary" data-toggle="modal">Offers</button></a>
                 <a class="navbar-text" href="/BLOG">
-                    <button id="blog_btn" type="button" class="btn btn-secondary" data-toggle="modal">Blog</button></a>
+                    <button id="blog_btn" type="button" class="btn btn-secondary" data-toggle="modal">Wenasa Blog</button></a>
                 <a class="navbar-text" href="/CONTACTUS">
                     <button id="contactUs_btn" type="button" class="btn btn-secondary" data-toggle="modal">Contact Us</button></a>
                 <button id="loginModal_btn" type="button" class="btn btn-warning" data-toggle="modal">Login</button>
-                <button id="user_name" type="button" class="btn btn-info d-none"></button>
-                <a id="post_register" class="btn btn-info d-none">View Order History</a>
+                <button id="user_name" type="button" class="btn btn-warning d-none"></button>
+                <a id="post_register" class="btn btn-warning d-none">View Order History</a>
             </div>
         </div>
     </nav>

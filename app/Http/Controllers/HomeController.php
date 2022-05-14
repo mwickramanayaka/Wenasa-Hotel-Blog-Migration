@@ -67,19 +67,19 @@ class HomeController extends Controller
 
 //
 public function RESERVATION(Request $request){
-
+    return view('reservation');
 }
 
 public function OFFERS(Request $request){
-
+    return view('offers');
 }
 
 public function BLOG(Request $request){
-
+    return view('blog');
 }
 
 public function CONTACTUS(Request $request){
-
+    return view('contactUs');
 }
 
 //

@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head><div class="background-image">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="csrf-token" content="{{ csrf_token() }}" />
+<head>
+    <div class="background-image">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="csrf-token" content="{{ csrf_token() }}" />
 
 
-    <title>Wenasa Hotel</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
-    <link href="{{ asset('assets_back_end/css/notiflix.css') }}" rel="stylesheet" />
+        <title>Wenasa Hotel</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+        <link href="{{ asset('assets_back_end/css/notiflix.css') }}" rel="stylesheet" />
 
 </head>
 
@@ -35,7 +36,7 @@
                 <a class="navbar-text" href="/CONTACTUS">
                     <button id="contactUs_btn" type="button" class="btn btn-secondary" data-toggle="modal">Contact Us</button></a>
                 <button id="loginModal_btn" type="button" class="btn btn-warning" data-toggle="modal">Login</button>
-                <button id="user_name" type="button" class="btn btn-warning d-none"></button>
+                <button id="user_name" type="button" class="btn btn-warning d-none"> </button>
                 <a id="post_register" class="btn btn-warning d-none">View Order History</a>
             </div>
         </div>
@@ -69,7 +70,7 @@
                 <div class="row">
 
                     <div class="col-md-12 mb-3">
-                        <label for="firstName"> name</label>
+                        <label for="firstName"> Name</label>
                         <input type="text" class="form-control mt-1" id="home_firstName">
                     </div>
                 </div>
@@ -108,7 +109,7 @@
                         <input id="home_date" type="date" class="form-control mt-1">
                     </div>
 
-                
+
 
                     <!-- <div class="col-md-6 mb-3">
                         <label>Room No</label>
@@ -122,14 +123,14 @@
 
                 <div class="row">
                     <div class="col-md-6 mb-3">
-                        <label>Room No</label>
+                        <label>Room Type</label>
                         <select id="home_room" class="form-select mt-1">
                             @foreach ($rooms as $room)
                             <option value="{{ $room->id }}">{{ $room->name }} : ({{ $room->type }})</option>
                             @endforeach
                         </select>
-                        </div>
                     </div>
+                </div>
 
                 <br>
                 <h4 class="mb-3">Select Food Order</h4>
@@ -394,14 +395,15 @@
 
         }
     </script>
-</div>
+    </div>
 </body>
 
 <style>
-    *{
+    * {
         margin: 0;
         padding: 0;
     }
+
     .background-image {
         background-image: url('hotel.webp');
         background-size: cover;
@@ -410,4 +412,5 @@
         height: 100%;
     }
 </style>
+
 </html>
